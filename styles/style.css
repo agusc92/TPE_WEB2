@@ -1,0 +1,50 @@
+
+.col{
+   
+}
+.row{
+   
+}
+.card-img-top {
+    max-width: 150px;
+    max-height: 220px;
+    object-fit: cover;
+}
+
+.card{
+    
+}
+
+
+.table{
+    border-radius: 10px;
+}
+  .movie-table th,
+  .movie-table td {
+    color: white;
+    padding: 10px;
+    
+  }
+
+  .movie-table th {
+
+    text-align: center;
+  }
+  .hover-effect:hover {
+    opacity: 0.5;
+    color: black;
+  }
+  a,label,p,h5,.card-title{
+    text-decoration: none;
+    color:white;
+  }
+  .tarjeta{
+    font-size: 1.5em;
+    padding: 30px 15% 0 15%;
+  }
+.logo-container{
+  margin-left: 25px;
+}
+  h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
