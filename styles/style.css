@@ -6,8 +6,8 @@
    
 }
 .card-img-top {
-    max-width: 150px;
-    max-height: 220px;
+    max-width: 350px;
+    max-height: 420px;
     object-fit: cover;
 }
 
@@ -45,6 +45,14 @@
 .logo-container{
   margin-left: 25px;
 }
-  h1{
+h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+}
+.logo-footer{
+  font-size: 50px;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}

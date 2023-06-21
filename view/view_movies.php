@@ -11,7 +11,6 @@ class view_movies
     }
     
     function mostrar($title, $genders, $movies){
-        $this->smarty-> assign('title', "Maspelis");
         $this->smarty->assign("genders", $genders);
         $this->smarty->assign ('movies', $movies);
         $this->smarty-> display ('templates/home.tpl');

@@ -3,6 +3,28 @@ class controller_secured{
     static function start(){
         if(session_status()==PHP_SESSION_NONE){
             session_start();
+            
+            if(isset($_SESSION['tiempo']) ) {
+
+                
+                $inactivo = 600;
+        
+                $vida_session = time() - $_SESSION['tiempo'];
+        
+                 
+                    if($vida_session > $inactivo)
+                    {
+                        
+                 
+                        session_destroy();              
+                        
+                        header("Location:".URL_BASE.'/login');
+        
+                        DIE();
+                    }
+                    $_SESSION['tiempo'] = time();
+            }
+            
         }
     }
     
@@ -12,6 +34,7 @@ class controller_secured{
         if (password_verify($pass,$dbuser->password)){
             
            $_SESSION['user']=$user;
+           $_SESSION['tiempo'] = time();
            $_SESSION['loged']=true;     
     }else{
         $_SESSION['loged']=false; 

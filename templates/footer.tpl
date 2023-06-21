@@ -1,7 +1,12 @@
     
 <footer>
 
-
+<div class=" text-white logo-container" href="{$URL_BASE}/home">
+<a class="navbar-brand text-white logo-container" href="{$URL_BASE}/home">
+                        <img src="{$URL_BASE}/media/logo-peli.png" width="80" height="80" alt=""><span
+                            class="logo-span logo-footer">MasPelis</span>
+                            </a>
+                    </div>
 
 
 

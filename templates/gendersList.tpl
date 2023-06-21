@@ -11,10 +11,6 @@
             <div class="col-3">Genero</div>
             <div class="col-2">Cantidad</div>
             <div class="col-4">Proximos Estrenos</div>
-
-            <div class="col-3"> <button type="button" class="btn btn-white border border-white"> <a
-                  href="{$URL_BASE}/prepare_add_gender"> Agregar Genero</a></button></div>
-          </div>
         </li>
         {foreach $genders as $gender}
           <li class="list-group-item bg-dark text-white hover-effect ">
